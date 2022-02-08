@@ -1,1 +1,1 @@
-# in-class-responsive-grid
+# mobile-grid
