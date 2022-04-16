@@ -9,10 +9,10 @@
 	grid-template-columns: 500px;
 
 	/* Play with: */
-	/* justify-content:; */
-	/* justify-items:;  */
-	/* align-items:; */
-	/* align-content:; */
+	justify-content: center; 
+	/* justify-items: space-around;   */
+	align-items: center; 
+	align-content: center; 
  }
 
  
@@ -31,11 +31,12 @@
 	/* Make this a two column grid. */
 	.grid{
 
-
+		grid-template-columns: 200px 200px;
+	
 		
 		/* Play with: */
-		/* justify-content:; */
-		/* align-items:;  */
+		justify-content: center; 
+		align-items: center;  
 
 
 		
@@ -43,13 +44,13 @@
 
  	.item1{
  		 /* Span the entire first row  */
-		
-		  /* grid-column: ; */
+		grid-column:1/-1;
+
  	}
 	
 	.item2{
 		/* Start in row 2 and span 3 rows */
-		/* grid-row:; */
+		 grid-template-rows:2/span 3; 
 
 	}
 
@@ -62,13 +63,16 @@
 	/* Make this a three column grid using fr. */
 	.grid{
 
+		grid-template-columns: 1fr 1fr 1fr;
 		/* Why don't we bother with justify here? */
+		justify-content: center;
 	}
 	.item3{
 		/* Start in row 2 and span two rows 
 		   Start in column 2 and span two columns */
 
-
+		grid-template-rows:2/span 2;
+		grid-template-columns:2/span 2;
 		/* What happens if you try to span 3 columns */
 	}
 
